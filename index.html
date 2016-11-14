@@ -1,0 +1,23 @@
+Index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Uploading Form</title>
+</head>
+<body>
+    <h3>File Upload:</h3>
+    Select a file to upload:
+    <br />
+    <form action="UploadFile.jsp" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" /> <br /> <label for="description"> <b>Enter Description for the image:</b>
+        </label> <input id="description" size="100" name="description" type="text"></input> <br /> <input type="submit" value="Upload File" />
+
+    </form>
+    <br></br>
+    <br></br>
+    <form action="display.jsp" method="post">
+        <input type="submit" value="Display Images" />
+    </form>
+</body>
+</html>
